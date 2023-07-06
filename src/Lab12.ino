@@ -26,7 +26,7 @@ void setup()
   // digitalWrite(LEDPIN, LOW);
 
   client.subscribe("testtopic/CoolTopic1");
-  client.subscribe("testtopic/CoolTopic1");
+  // client.subscribe("testtopic/CoolTopic1");
 }
 void loop()
 {
@@ -38,7 +38,7 @@ void loop()
   {
     client.connect(System.deviceID());
     client.subscribe("testtopic/CoolTopic1");
-    client.subscribe("testtopic/CpolTopic1");
+    // client.subscribe("testtopic/CpolTopic1");
     Serial.println("DIDN'T WORK");
   }
   // run display and blynk continuously
